@@ -4,7 +4,7 @@
 int main(int argc, char * * argv)
 {  
     int size = 5;
-    int sum;
+    int sum = 0;
     double average;
 
     int arr[] = {1, 2, 3, 4, 5};

@@ -1,22 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Node{
+struct Node {
     int data;
     struct Node *next;
-} head;
+};
+
+struct Node *head;
 
 void push(int newData){
+    //make a new node with new data. head node should be next, head name should point to new node.
+
     struct Node newNode = {
         newData,
         head
     };
-    head = newNode;
+    
 }
 
 void deleteNode(int key) {
     struct Node temp = head;
-    struct Node prev = NULL;
+    struct Node prev;
 
     if (temp != NULL && temp.data == key){
         head = temp.next;
@@ -29,8 +33,7 @@ void deleteNode(int key) {
     }
 
     if (temp == NULL){
-        return;
-    }
+        return;    }
 
     prev.next = temp.next;
 }

@@ -8,8 +8,6 @@ void addMatrix(int row[], int col[]){
     int sizeRow = sizeof(row) / sizeof(row[0]);
     int sizeCol = sizeof(col) / sizeof(col[0]);
 
-
-
     printf("Added matrices: \n");
 
     for (int i = 0; i < sizeRow; i++){
@@ -25,6 +23,7 @@ void multMatrix(int row[], int col[]){
     int sizeCol = sizeof(col) / sizeof(col[0]);
 
     printf("Multiplied matrices: \n");
+    
     for (int i = 0; i < sizeRow; i++){
         for (int j = 0; j < sizeCol; j++){
             printf("%d ", (row[i] * col[j]));

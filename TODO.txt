@@ -1,5 +1,0 @@
-before turning in:
--evaluate each for catching errors
--delete this message
--ensure all directions followed
-

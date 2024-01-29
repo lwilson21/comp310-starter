@@ -21,10 +21,10 @@ void push(int newData){
 
 void printList(){
     struct Node tnode = *head;
-    //while (tnode != NULL){
-        //printf("%d ", tnode.data);
-        //tnode = *tnode.next;
-    //}
+    while (tnode.data != NULL){
+        printf("%d ", tnode.data);
+        tnode = *tnode.next;
+    }
 }
 
 int main(int argc, char * * argv){
